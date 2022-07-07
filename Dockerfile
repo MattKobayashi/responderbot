@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.16
 
 # Create and switch to working directory
 WORKDIR /opt/responderbot
