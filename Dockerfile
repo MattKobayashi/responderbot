@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3
 
 # Create and switch to working directory
 WORKDIR /opt/responderbot
@@ -20,4 +20,4 @@ RUN python3 -m pip install -r requirements.txt
 EXPOSE 3000
 ENTRYPOINT ["python3", "responderbot.py"]
 
-LABEL maintainer="matthew@kobayashi.com.au"
+LABEL maintainer="matthew@kobayashi.au"
