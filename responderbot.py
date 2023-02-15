@@ -42,6 +42,13 @@ def skeeve_regex(message, say):
     )
 
 
+@app.event({
+    "user": "UEVC4T56E"
+    })
+def jen_rolleyes(channel, ts, client):
+    client.reactions_add(ts=ts, channel=channel, name='face_with_rolling_eyes')
+
+
 @app.event("message")
 def handle_message_events(body, logger):
     logger.info(body)
